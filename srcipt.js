@@ -73,4 +73,3 @@ const playSong = (song) => {
 playButton.addEventListener('click', () => {
   playSong(fullsong);
 });
-
