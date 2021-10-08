@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+  margin: 0;
+  background: #323232;
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Luckiest Guy', cursive;
+}
+
+p {
+  color: white;
+}
+
+@keyframes colorchange {
+  0%   {color: #FFAEBC}
+  25%   {color: #A0E7E5}
+  50%   {color: #B4F8C8}
+  70%   {color: #A0E7E5}
+  100% {color: #FFAEBC}
+}
+
+@keyframes buttonColorChange {
+  0%   {background-color: #FFAEBC}
+  25%   {background-color: #A0E7E5}
+  50%   {background-color: #B4F8C8}
+  70%   {background-color: #A0E7E5}
+  100% {background-color: #FFAEBC}
+}
+
+@keyframes appear {
+  0%   {opacity: 0; font-size: 10px;}
+  100% {opacity: 1; font-size: 76px;}
+}
+
+@keyframes appearButton {
+  0%   {opacity: 0; font-size: 10px;}
+  100% {opacity: 1; font-size:  24px;}
+}
+
+.play-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  
+  background-color: #A0E7E5;
+  opacity: 0;
+
+  animation-name: appearButton, buttonColorChange;
+  animation-duration: 1s, 2s;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+}
+
+.ha {
+  width: 100%;
+}
+
+#first-ha {
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  animation-name: appear, colorchange;
+  animation-duration: 1s, 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+}
+
+#second-ha {
+  display: flex;
+  justify-content: center;
+  
+  opacity: 0;
+  animation-name: appear, colorchange;
+  animation-duration: 1s, 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+}
+
+#vai-ter-que-rebolar {
+  display: flex;
+  justify-content: center;
+  
+  opacity: 0;
+  animation-name: appear, colorchange;
+  animation-duration: 1s, 2s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+}
