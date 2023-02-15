@@ -53,6 +53,7 @@ p {
   
   background-color: #A0E7E5;
   opacity: 0;
+  cursor: pointer;
 
   animation-name: appearButton, buttonColorChange;
   animation-duration: 1s, 2s;
